@@ -24,6 +24,13 @@ private long mLastUpdateTime = 0;
 
 private Interpolator mInterpolator = new AccelerateInterpolator();
 
+/**
+ *
+ * @param startingValue The initial value
+ * @param finalValue The final value
+ * @param duration Duration in milliseconds
+ * @param textView The TextView to update with value
+ */
 public CountingHelper(int startingValue, int finalValue, int duration, TextView textView) {
     mDuration = duration;
     mStartingValue = startingValue;

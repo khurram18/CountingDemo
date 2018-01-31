@@ -24,7 +24,10 @@ private void setValue(final int value) {
         @Override
         public void run() {
             mTextView.postOnAnimation(
-                    new CountingHelper(0, value, 5000, mTextView));
+                    new CountingHelper(0, // initial value
+                            value, // final value
+                            5000, // duration in milliseconds
+                            mTextView));
         }
     });
 }
